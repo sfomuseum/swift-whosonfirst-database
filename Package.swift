@@ -28,7 +28,10 @@ let package = Package(
         ),
         .testTarget(
             name: "WhosOnFirstTests",
-            dependencies: ["WhosOnFirst"]
+            dependencies: ["WhosOnFirst"],
+            resources: [
+                        .process("Resources/sfomuseum-maps.db")
+            ]
         ),
     ]
 )
