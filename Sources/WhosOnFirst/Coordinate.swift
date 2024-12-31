@@ -1,8 +1,13 @@
 import Foundation
 
 public struct Coordinate: Codable {
-    public let lat: Double
-    public let lng: Double
+    let lat: Double
+    let lng: Double
+    
+    public init(lat: Double, lng: Double) {
+        self.lat = lat
+        self.lng = lng
+    }
 }
 
 extension Coordinate {
