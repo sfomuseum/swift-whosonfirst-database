@@ -1,8 +1,8 @@
 import Foundation
 
 public struct Coordinate: Codable {
-    let lat: Double
-    let lng: Double
+    public let lat: Double
+    public let lng: Double
 }
 
 extension Coordinate {
