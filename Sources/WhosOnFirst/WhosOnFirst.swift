@@ -2,7 +2,7 @@ import SQLite
 import GeoJSON
 import Foundation
 
-struct Database {
+public struct Database {
     
     var dbconn: SQLite.Connection? = nil
     

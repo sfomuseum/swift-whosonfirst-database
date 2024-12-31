@@ -1,12 +1,12 @@
 import Foundation
 
-struct Coordinate: Codable {
+public struct Coordinate: Codable {
     let lat: Double
     let lng: Double
 }
 
 extension Coordinate {
-    func boundingBox(inches: Double) -> (min_x: Double, min_y: Double, max_x: Double, max_y: Double) {
+    public func boundingBox(inches: Double) -> (min_x: Double, min_y: Double, max_x: Double, max_y: Double) {
         // Convert inches to kilometers
         let kmPerInch = 0.0000254
         let distanceInKm = inches * kmPerInch
